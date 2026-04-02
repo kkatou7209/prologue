@@ -1,0 +1,30 @@
+name: prologue
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: prologue-app
+    volumes:
+      - ../app:/workspace
+      - app-target:/workspace/target
+    command: sleep infinity
+    working_dir: /workspace
+    tty: true
+
+  ui:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    container_name: prologue-ui
+    volumes:
+      - ../ui:/workspace
+      - ui-node_modules:/workspace/node_modules
+    command: sleep infinity
+    working_dir: /workspace
+    tty: true
+
+volumes:
+  app-target:
+  ui-node_modules:

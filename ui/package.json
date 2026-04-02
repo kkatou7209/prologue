@@ -1,0 +1,10 @@
+{
+  "name": "prologue",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^6.0.2"
+  },
+  "private": true,
+  "type": "module"
+}

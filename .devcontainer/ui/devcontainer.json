@@ -1,0 +1,11 @@
+{
+    "name": "prologue-ui",
+    "dockerComposeFile": "../compose.yml",
+    "service": "ui",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        }
+    }
+}
